@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpack/Babel-demo</title>
+  </head>
+
+  <body>
+    <!--
+    This div is added to remove the flicker that comes from bootstrap being loaded
+    first in index.js
+    REMEMBER to set display to "block" in index.js, otherwise you will not see anything
+  -->
+    <div id="all-content" style="display: none">
+      <ul id="menu" class="header">
+        <li><a href="#" id="about">About</a></li>
+        <li><a href="#" id="ex1">Ex1</a></li>
+        <li><a href="#" id="ex2">Ex2</a></li>
+        <li><a href="#" id="ex3">Ex3</a></li>
+      </ul>
+
+      <div class="content">
+        <!-- This is were you should place your basic HTML for exercise-1 -->
+        <div id="ex1_html" style="display: none">
+          <h3>Exercise 1</h3>
+          <p>Add your basic HTML for Exercise 1 here</p>
+          <ul id="jokes"></ul>
+          <input id="get-joke-input" placeholder="Joke id" />
+          <button id="get-joke-button">Get joke by id</button>
+          <p id="show-joke"></p>
+
+          <form id="add-joke-form">
+            <input id="add-joke-input" placeholder="Your joke" />
+            <button type="submit">Add new joke</button>
+          </form>
+        </div>
+        <!-- End of HTML for exercise-1 -->
+
+        <!-- This is were you should place your basic HTML for exercise-2 -->
+        <div id="ex2_html" style="display: none">
+          <h3>Exercise 2</h3>
+          <p id="ex2p">Add your basic HTML for Exercise 2 here</p>
+          <button id="quote-button">Find quote</button>
+          <p id="quote-p"></p>
+        </div>
+        <!-- End of HTML for exercise-2 -->
+
+        <!-- This is were you should place your basic HTML for exercise-3 -->
+        <div id="ex3_html" style="display: none">
+          <h3>Ex-3</h3>
+          <p>Add your basic HTML for Exercise 3 here</p>
+          <h2 style="color: red" id="error-display"></h2>
+          <h2 style="color: green" id="success-display"></h2>
+
+          <div class="row" style="min-height: 5em;"">
+          <div
+            class="col-md-8 pre-scrollable"
+            style="background-color: lightgrey"
+          >
+            <h5>All Users</h5>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Age</th>
+                  <th>Name</th>
+                  <th></th>
+                  <th>Gender</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+
+              <tbody id="allUserRows"></tbody>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="col-md-4" style="background-color: powderblue">
+            <h5>Find User</h5>
+            <form id="find-user-form">
+              <input id="find-user-input" placeholder="User id" />
+              <button type="submit">Find user</button>
+            </form>
+            <div id="show-user-by-id"></div>
+          </div>
+        </div>
+        <div class="row" style="min-height: 5em">
+          <div class="col-md-4" style="background-color: powderblue">
+            <h5>Add User</h5>
+            <form id="add-new-user-form">
+              <input placeholder="Age" id="add-age" />
+              <input placeholder="Name" id="add-name" />
+              <input placeholder="Gender" id="add-gender" />
+              <input placeholder="Email" id="add-email" />
+              <button type="submit">Add user</button>
+            </form>
+          </div>
+          <div class="col-md-4" style="background-color: lightgrey">
+            <h5>Edit User</h5>
+            <form id="edit-user-form">
+              <input placeholder="Id" id="edit-id" />
+              <input placeholder="Age" id="edit-age" />
+              <input placeholder="Name" id="edit-name" />
+              <input placeholder="Gender" id="edit-gender" />
+              <input placeholder="Email" id="edit-email" />
+              <button type="submit">Edit user</button>
+            </form>
+          </div>
+          <div class="col-md-4" style="background-color: powderblue">
+            <h5>Delete User</h5>
+            <form id="delete-user-form">
+              <input placeholder="User id" id="delete-id" />
+              <button type="submit">Delete user</button>
+            </form>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- End of HTML for exercise-3 -->
+
+        <!---- HTML for the About page -->
+        <div id="about_html" style="display: none">
+          <h3>About</h3>
+          <p>
+            Watch the small video given as intro to this code, BEFORE you start
+            using it
+          </p>
+        </div>
+        <!-- End of HTML for ABOUT Page -->
+      </div>
+
+      <!--End of all content -->
+    </div>
+
+    <!-- #################################################################-->
+    <!-- IMPORTANT  DO NOT IMPORT ANY JavaScript in this file by YOURSELF -->
+    <!-- #################################################################-->
+  </body>
+</html>
