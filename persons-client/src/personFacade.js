@@ -7,8 +7,7 @@ function findAllPeople() {
     .then(data => {
       const tableBody = document.getElementById("tbody")
       tableBody.innerHTML = utils.generateListFromPeople(data)
-      utils.generateEditOnClicks(data)
-      utils.generateDeleteOnClicks(data)
+      utils.generateOnClicks(data)
     })
     .catch(utils.handlePersonErrors)
 }

@@ -41,8 +41,9 @@ function generateListFromPeople(data) {
   return rows.join("")
 }
 
-function generateEditOnClicks(data) {
+function generateOnClicks(data) {
   data.all.map(p => {
+    //edit button
     const editButtonNode = document.getElementById(`editperson${p.id}`)
     editButtonNode.addEventListener("click", () => {
       //Add id to hidden input
@@ -55,20 +56,10 @@ function generateEditOnClicks(data) {
       document.getElementById("city").value = p.address.city
       $("#myModal").modal("show")
     })
+    //delete button
+    const deleteButtonNode = document.getElementById(`deleteperson${p.id}`)
+    deleteButtonNode.addEventListener("click", () => handleDeletePerson(p.id))
   })
 }
 
-function generateDeleteOnClicks(data) {
-  data.all.map(p => {
-    const editButtonNode = document.getElementById(`deleteperson${p.id}`)
-    editButtonNode.addEventListener("click", () => handleDeletePerson(p.id))
-  })
-}
-
-export {
-  urls,
-  generateListFromPeople,
-  handlePersonErrors,
-  generateEditOnClicks,
-  generateDeleteOnClicks,
-}
+export { urls, generateListFromPeople, handlePersonErrors, generateOnClicks }
