@@ -20,9 +20,14 @@ function handleHttpErrors(res) {
 }
 
 function fetchRandomData(url, method, body) {
-  return fetch(url, method && makeOptions(method, body))
-    .then(handleHttpErrors)
-    .then(data => data)
+  return fetch(url, method && makeOptions(method, body)).then(handleHttpErrors)
 }
 
-export { fetchRandomData }
+const https = {
+  GET: "GET",
+  POST: "POST",
+  PUT: "PUT",
+  DELETE: "DELETE",
+}
+
+export { fetchRandomData, https }
