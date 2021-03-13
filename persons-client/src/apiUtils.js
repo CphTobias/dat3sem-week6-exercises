@@ -26,8 +26,8 @@ function fetchRandomData(url, method, body) {
 const https = {
   GET: "GET",
   POST: "POST",
-  PUT: "PUT",
   DELETE: "DELETE",
+  PUT: "PUT",
 }
 
 export { fetchRandomData, https }

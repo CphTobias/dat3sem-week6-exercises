@@ -2,8 +2,8 @@ import $ from "jquery"
 import { handleDeletePerson } from "./personFacade"
 
 const urls = {
-  all: "https://tobias-z.com/rest-persons-dto/api/person/",
-  byId: id => `https://tobias-z.com/rest-persons-dto/api/person/${id}`,
+  all: "https://tobias-z.com/api/rest-persons-dto/person/",
+  byId: id => `https://tobias-z.com/api/rest-persons-dto/person/${id}`,
 }
 
 function handlePersonErrors(err) {

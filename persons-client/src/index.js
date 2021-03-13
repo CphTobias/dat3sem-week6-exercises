@@ -1,6 +1,7 @@
 import "./style.css"
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap"
+import $ from "jquery"
 import { findAllPeople, handlePersonInput } from "./personFacade"
 
 // Load all on page load
